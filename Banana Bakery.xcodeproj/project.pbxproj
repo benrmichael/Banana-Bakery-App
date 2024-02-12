@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F007D9D2B7951EA00CF2059 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F007D9C2B7951EA00CF2059 /* ErrorResponse.swift */; };
+		0F007DA02B79557800CF2059 /* AuthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F007D9F2B79557800CF2059 /* AuthData.swift */; };
+		0F007DA32B795BFF00CF2059 /* RecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F007DA22B795BFF00CF2059 /* RecipesView.swift */; };
+		0F007DA82B7964E300CF2059 /* SessionAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F007DA72B7964E300CF2059 /* SessionAuthentication.swift */; };
+		0F007DAC2B79659800CF2059 /* RecipeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F007DAB2B79659700CF2059 /* RecipeSection.swift */; };
+		0F007DAE2B79661B00CF2059 /* CreateFolderDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F007DAD2B79661B00CF2059 /* CreateFolderDto.swift */; };
+		0F007DB02B79672400CF2059 /* SaveRecipeDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F007DAF2B79672400CF2059 /* SaveRecipeDto.swift */; };
+		0F007DB22B7968A700CF2059 /* SearchRecipeDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F007DB12B7968A700CF2059 /* SearchRecipeDto.swift */; };
+		0F007DB42B7968B400CF2059 /* FolderRecipeDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F007DB32B7968B400CF2059 /* FolderRecipeDto.swift */; };
+		0F007DB62B79691200CF2059 /* FolderGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F007DB52B79691200CF2059 /* FolderGroup.swift */; };
+		0F007DB82B79702C00CF2059 /* FoldersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F007DB72B79702C00CF2059 /* FoldersViewModel.swift */; };
+		0F007DBA2B7970E300CF2059 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F007DB92B7970E300CF2059 /* NetworkService.swift */; };
+		0FBDC1652B792CC700A650DD /* Banana_BakeryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBDC1642B792CC700A650DD /* Banana_BakeryApp.swift */; };
+		0FBDC1672B792CC700A650DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBDC1662B792CC700A650DD /* ContentView.swift */; };
+		0FBDC1692B792CC800A650DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FBDC1682B792CC800A650DD /* Assets.xcassets */; };
+		0FBDC16C2B792CC800A650DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FBDC16B2B792CC800A650DD /* Preview Assets.xcassets */; };
+		0FBDC1752B792D0900A650DD /* LoginField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBDC1742B792D0900A650DD /* LoginField.swift */; };
+		0FBDC17B2B79327700A650DD /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBDC17A2B79327700A650DD /* LoginScreen.swift */; };
+		0FBDC17D2B793B0800A650DD /* PasswordField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBDC17C2B793B0800A650DD /* PasswordField.swift */; };
+		0FBDC1812B793C9300A650DD /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBDC1802B793C9300A650DD /* LoginRequest.swift */; };
+		0FBDC1842B793DCF00A650DD /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBDC1832B793DCF00A650DD /* LoginResponse.swift */; };
+		0FBDC1872B793EA700A650DD /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBDC1862B793EA700A650DD /* Login.swift */; };
+		0FBDC18A2B7940E000A650DD /* LoginAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBDC1892B7940E000A650DD /* LoginAction.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F007D9C2B7951EA00CF2059 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		0F007D9F2B79557800CF2059 /* AuthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthData.swift; sourceTree = "<group>"; };
+		0F007DA22B795BFF00CF2059 /* RecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesView.swift; sourceTree = "<group>"; };
+		0F007DA72B7964E300CF2059 /* SessionAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionAuthentication.swift; sourceTree = "<group>"; };
+		0F007DAB2B79659700CF2059 /* RecipeSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSection.swift; sourceTree = "<group>"; };
+		0F007DAD2B79661B00CF2059 /* CreateFolderDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateFolderDto.swift; sourceTree = "<group>"; };
+		0F007DAF2B79672400CF2059 /* SaveRecipeDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveRecipeDto.swift; sourceTree = "<group>"; };
+		0F007DB12B7968A700CF2059 /* SearchRecipeDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipeDto.swift; sourceTree = "<group>"; };
+		0F007DB32B7968B400CF2059 /* FolderRecipeDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderRecipeDto.swift; sourceTree = "<group>"; };
+		0F007DB52B79691200CF2059 /* FolderGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderGroup.swift; sourceTree = "<group>"; };
+		0F007DB72B79702C00CF2059 /* FoldersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldersViewModel.swift; sourceTree = "<group>"; };
+		0F007DB92B7970E300CF2059 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		0FBDC1612B792CC700A650DD /* Banana Bakery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Banana Bakery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FBDC1642B792CC700A650DD /* Banana_BakeryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banana_BakeryApp.swift; sourceTree = "<group>"; };
+		0FBDC1662B792CC700A650DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0FBDC1682B792CC800A650DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0FBDC16B2B792CC800A650DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0FBDC1742B792D0900A650DD /* LoginField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginField.swift; sourceTree = "<group>"; };
+		0FBDC17A2B79327700A650DD /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		0FBDC17C2B793B0800A650DD /* PasswordField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordField.swift; sourceTree = "<group>"; };
+		0FBDC1802B793C9300A650DD /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		0FBDC1832B793DCF00A650DD /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		0FBDC1862B793EA700A650DD /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		0FBDC1892B7940E000A650DD /* LoginAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAction.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FBDC15E2B792CC700A650DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F007D9E2B79556900CF2059 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0F007D9F2B79557800CF2059 /* AuthData.swift */,
+				0F007DB72B79702C00CF2059 /* FoldersViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0F007DA12B795BEA00CF2059 /* Recipes */ = {
+			isa = PBXGroup;
+			children = (
+				0F007DA22B795BFF00CF2059 /* RecipesView.swift */,
+			);
+			path = Recipes;
+			sourceTree = "<group>";
+		};
+		0F007DA62B79649200CF2059 /* Dto */ = {
+			isa = PBXGroup;
+			children = (
+				0F007DA72B7964E300CF2059 /* SessionAuthentication.swift */,
+				0F007DAB2B79659700CF2059 /* RecipeSection.swift */,
+				0F007DAD2B79661B00CF2059 /* CreateFolderDto.swift */,
+				0F007DAF2B79672400CF2059 /* SaveRecipeDto.swift */,
+				0F007DB12B7968A700CF2059 /* SearchRecipeDto.swift */,
+				0F007DB32B7968B400CF2059 /* FolderRecipeDto.swift */,
+				0F007DB52B79691200CF2059 /* FolderGroup.swift */,
+			);
+			path = Dto;
+			sourceTree = "<group>";
+		};
+		0FBDC1582B792CC700A650DD = {
+			isa = PBXGroup;
+			children = (
+				0FBDC1632B792CC700A650DD /* Banana Bakery */,
+				0FBDC1622B792CC700A650DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0FBDC1622B792CC700A650DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FBDC1612B792CC700A650DD /* Banana Bakery.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FBDC1632B792CC700A650DD /* Banana Bakery */ = {
+			isa = PBXGroup;
+			children = (
+				0F007DA62B79649200CF2059 /* Dto */,
+				0F007D9E2B79556900CF2059 /* Model */,
+				0FBDC17E2B793C7D00A650DD /* Network */,
+				0FBDC1722B792CEE00A650DD /* Views */,
+				0FBDC1642B792CC700A650DD /* Banana_BakeryApp.swift */,
+				0FBDC1662B792CC700A650DD /* ContentView.swift */,
+				0FBDC1682B792CC800A650DD /* Assets.xcassets */,
+				0FBDC16A2B792CC800A650DD /* Preview Content */,
+			);
+			path = "Banana Bakery";
+			sourceTree = "<group>";
+		};
+		0FBDC16A2B792CC800A650DD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0FBDC16B2B792CC800A650DD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0FBDC1722B792CEE00A650DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0F007DA12B795BEA00CF2059 /* Recipes */,
+				0FBDC1732B792CF600A650DD /* Login */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0FBDC1732B792CF600A650DD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0FBDC1742B792D0900A650DD /* LoginField.swift */,
+				0FBDC17A2B79327700A650DD /* LoginScreen.swift */,
+				0FBDC17C2B793B0800A650DD /* PasswordField.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0FBDC17E2B793C7D00A650DD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0FBDC1882B7940D400A650DD /* Actions */,
+				0FBDC1852B793E9700A650DD /* Calls */,
+				0FBDC1822B793DC000A650DD /* Responses */,
+				0FBDC17F2B793C8600A650DD /* Requests */,
+				0F007DB92B7970E300CF2059 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0FBDC17F2B793C8600A650DD /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				0FBDC1802B793C9300A650DD /* LoginRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		0FBDC1822B793DC000A650DD /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				0FBDC1832B793DCF00A650DD /* LoginResponse.swift */,
+				0F007D9C2B7951EA00CF2059 /* ErrorResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		0FBDC1852B793E9700A650DD /* Calls */ = {
+			isa = PBXGroup;
+			children = (
+				0FBDC1862B793EA700A650DD /* Login.swift */,
+			);
+			path = Calls;
+			sourceTree = "<group>";
+		};
+		0FBDC1882B7940D400A650DD /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				0FBDC1892B7940E000A650DD /* LoginAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0FBDC1602B792CC700A650DD /* Banana Bakery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FBDC16F2B792CC800A650DD /* Build configuration list for PBXNativeTarget "Banana Bakery" */;
+			buildPhases = (
+				0FBDC15D2B792CC700A650DD /* Sources */,
+				0FBDC15E2B792CC700A650DD /* Frameworks */,
+				0FBDC15F2B792CC700A650DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Banana Bakery";
+			productName = "Banana Bakery";
+			productReference = 0FBDC1612B792CC700A650DD /* Banana Bakery.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0FBDC1592B792CC700A650DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					0FBDC1602B792CC700A650DD = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 0FBDC15C2B792CC700A650DD /* Build configuration list for PBXProject "Banana Bakery" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0FBDC1582B792CC700A650DD;
+			productRefGroup = 0FBDC1622B792CC700A650DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0FBDC1602B792CC700A650DD /* Banana Bakery */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FBDC15F2B792CC700A650DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FBDC16C2B792CC800A650DD /* Preview Assets.xcassets in Resources */,
+				0FBDC1692B792CC800A650DD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FBDC15D2B792CC700A650DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FBDC1672B792CC700A650DD /* ContentView.swift in Sources */,
+				0FBDC1652B792CC700A650DD /* Banana_BakeryApp.swift in Sources */,
+				0FBDC18A2B7940E000A650DD /* LoginAction.swift in Sources */,
+				0F007DB42B7968B400CF2059 /* FolderRecipeDto.swift in Sources */,
+				0F007DA02B79557800CF2059 /* AuthData.swift in Sources */,
+				0FBDC1752B792D0900A650DD /* LoginField.swift in Sources */,
+				0F007DAE2B79661B00CF2059 /* CreateFolderDto.swift in Sources */,
+				0FBDC1812B793C9300A650DD /* LoginRequest.swift in Sources */,
+				0F007DB82B79702C00CF2059 /* FoldersViewModel.swift in Sources */,
+				0F007DB62B79691200CF2059 /* FolderGroup.swift in Sources */,
+				0F007D9D2B7951EA00CF2059 /* ErrorResponse.swift in Sources */,
+				0F007DB22B7968A700CF2059 /* SearchRecipeDto.swift in Sources */,
+				0FBDC17D2B793B0800A650DD /* PasswordField.swift in Sources */,
+				0F007DBA2B7970E300CF2059 /* NetworkService.swift in Sources */,
+				0FBDC17B2B79327700A650DD /* LoginScreen.swift in Sources */,
+				0F007DAC2B79659800CF2059 /* RecipeSection.swift in Sources */,
+				0FBDC1842B793DCF00A650DD /* LoginResponse.swift in Sources */,
+				0F007DB02B79672400CF2059 /* SaveRecipeDto.swift in Sources */,
+				0F007DA32B795BFF00CF2059 /* RecipesView.swift in Sources */,
+				0F007DA82B7964E300CF2059 /* SessionAuthentication.swift in Sources */,
+				0FBDC1872B793EA700A650DD /* Login.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0FBDC16D2B792CC800A650DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0FBDC16E2B792CC800A650DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0FBDC1702B792CC800A650DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Banana Bakery/Preview Content\"";
+				DEVELOPMENT_TEAM = 886646DU8M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.beanana.Banana-Bakery";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0FBDC1712B792CC800A650DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Banana Bakery/Preview Content\"";
+				DEVELOPMENT_TEAM = 886646DU8M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.beanana.Banana-Bakery";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FBDC15C2B792CC700A650DD /* Build configuration list for PBXProject "Banana Bakery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FBDC16D2B792CC800A650DD /* Debug */,
+				0FBDC16E2B792CC800A650DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FBDC16F2B792CC800A650DD /* Build configuration list for PBXNativeTarget "Banana Bakery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FBDC1702B792CC800A650DD /* Debug */,
+				0FBDC1712B792CC800A650DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0FBDC1592B792CC700A650DD /* Project object */;
+}
