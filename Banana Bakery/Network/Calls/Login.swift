@@ -23,7 +23,7 @@ struct Login {
         components.path = path
             
         guard let url = components.url else {
-            // return from call if failure to create url
+            failure(ErrorResponse(details: "Server request error! URL"))
             return
         }
             
@@ -36,8 +36,7 @@ struct Login {
         do {
             request.httpBody = try JSONEncoder().encode(parameters)
         } catch {
-            // Error: Unable to encode request parameters
-            print("Failure to encode the request parameters")
+            failure(ErrorResponse(details: "Server request error! FTE"))
         }
             
         let task = URLSession.shared.dataTask(with: request) { data, _, error in
@@ -47,15 +46,12 @@ struct Login {
                     if let response = response {
                         completion(response)
                     } else {
-                        // Error: Unable to decode response JSON
-                        let error = try?
-                            JSONDecoder().decode(ErrorResponse.self, from: data)
-                        if let error = error {
-                            failure(error)
+                        let error = try? JSONDecoder().decode(ErrorResponse.self, from: data)
+                        if error != nil {
+                            failure(ErrorResponse(details: "Server request error! FTD"))
                         }
                     }
                 } else {
-                    // Error: API request failed
                     if let error = error {
                         print("Error: \(error.localizedDescription)")
                     }

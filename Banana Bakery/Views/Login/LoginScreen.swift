@@ -10,6 +10,7 @@ import SwiftUI
 struct LoginScreen: View {
     @Binding var authData: AuthData
     @State private var showPassword: Bool = false
+    @State private var showAlert: Bool = false
     @State private var loggingIn: Bool = false
     @State private var username: String = ""
     @State private var password: String = ""
@@ -27,14 +28,14 @@ struct LoginScreen: View {
             
             Button {
                 if !loggingIn {
-                    print("Sending login request")
                     loggingIn.toggle()
-                    LoginAction(
-                        username: username,
-                        password: password,
-                        authData: $authData,
-                        loggingIn: $loggingIn
-                    ).loginUser()
+                    Login(parameters: LoginRequest(username: username, password: password)).call { response in
+                        authData.setCredentials(username: response.username, key: response.sessionKey)
+                        loggingIn.toggle()
+                    } failure: { ErrorResponse in
+                        loggingIn.toggle()
+                        showAlert.toggle()
+                    }
                 }
             } label: {
                 if !loggingIn {
@@ -51,6 +52,9 @@ struct LoginScreen: View {
             .padding(.trailing, 25)
             
             Spacer()
+        }
+        .alert(isPresented: $showAlert) {
+            Alert(title: Text("Error!"), message: Text("Failed to login. Please try again."), dismissButton: .default(Text("Ok")))
         }
     }
 }
