@@ -10,10 +10,6 @@ import Foundation
 @Observable
 class AuthData {
     
-    init() {
-        
-    }
-    
     var loggedIn: Bool?
     var credentials: Credentials?
     var error: ErrorResponse?

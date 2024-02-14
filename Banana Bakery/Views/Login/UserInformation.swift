@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LoginField: View {
+struct UserInformation: View {
     @Binding var username: String
     @Binding var password: String
     @State private var showPassword: Bool = false
@@ -15,11 +15,11 @@ struct LoginField: View {
     var body: some View {
         VStack {
             TextField ("Username", text: $username)
-            
             PasswordField(password: $password, showPassword: $showPassword)
         }
         .shadow(radius: 3)
         .autocorrectionDisabled()
+        .textInputAutocapitalization(.never)
         .textFieldStyle(.roundedBorder)
         .padding()
         .padding(.leading, 25)
@@ -30,5 +30,5 @@ struct LoginField: View {
 #Preview {
     let username = Binding.constant("")
     let password = Binding.constant("")
-    return LoginField(username: username, password: password)
+    return UserInformation(username: username, password: password)
 }

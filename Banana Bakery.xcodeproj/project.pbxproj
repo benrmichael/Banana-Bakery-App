@@ -21,11 +21,12 @@
 		0F007DBA2B7970E300CF2059 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F007DB92B7970E300CF2059 /* NetworkService.swift */; };
 		0F007DBC2B7B422400CF2059 /* GetRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F007DBB2B7B422400CF2059 /* GetRecipes.swift */; };
 		0F007DBE2B7B480200CF2059 /* RecipesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F007DBD2B7B480200CF2059 /* RecipesViewModel.swift */; };
+		0F9D58002B7C7270007E8E61 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9D57FF2B7C7270007E8E61 /* LoginViewModel.swift */; };
 		0FBDC1652B792CC700A650DD /* Banana_BakeryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBDC1642B792CC700A650DD /* Banana_BakeryApp.swift */; };
 		0FBDC1672B792CC700A650DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBDC1662B792CC700A650DD /* ContentView.swift */; };
 		0FBDC1692B792CC800A650DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FBDC1682B792CC800A650DD /* Assets.xcassets */; };
 		0FBDC16C2B792CC800A650DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FBDC16B2B792CC800A650DD /* Preview Assets.xcassets */; };
-		0FBDC1752B792D0900A650DD /* LoginField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBDC1742B792D0900A650DD /* LoginField.swift */; };
+		0FBDC1752B792D0900A650DD /* UserInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBDC1742B792D0900A650DD /* UserInformation.swift */; };
 		0FBDC17B2B79327700A650DD /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBDC17A2B79327700A650DD /* LoginScreen.swift */; };
 		0FBDC17D2B793B0800A650DD /* PasswordField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBDC17C2B793B0800A650DD /* PasswordField.swift */; };
 		0FBDC1812B793C9300A650DD /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBDC1802B793C9300A650DD /* LoginRequest.swift */; };
@@ -48,12 +49,13 @@
 		0F007DB92B7970E300CF2059 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		0F007DBB2B7B422400CF2059 /* GetRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRecipes.swift; sourceTree = "<group>"; };
 		0F007DBD2B7B480200CF2059 /* RecipesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewModel.swift; sourceTree = "<group>"; };
+		0F9D57FF2B7C7270007E8E61 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		0FBDC1612B792CC700A650DD /* Banana Bakery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Banana Bakery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FBDC1642B792CC700A650DD /* Banana_BakeryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banana_BakeryApp.swift; sourceTree = "<group>"; };
 		0FBDC1662B792CC700A650DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0FBDC1682B792CC800A650DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FBDC16B2B792CC800A650DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0FBDC1742B792D0900A650DD /* LoginField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginField.swift; sourceTree = "<group>"; };
+		0FBDC1742B792D0900A650DD /* UserInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformation.swift; sourceTree = "<group>"; };
 		0FBDC17A2B79327700A650DD /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		0FBDC17C2B793B0800A650DD /* PasswordField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordField.swift; sourceTree = "<group>"; };
 		0FBDC1802B793C9300A650DD /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				0F007D9F2B79557800CF2059 /* AuthData.swift */,
 				0F007DB72B79702C00CF2059 /* FoldersViewModel.swift */,
 				0F007DBD2B7B480200CF2059 /* RecipesViewModel.swift */,
+				0F9D57FF2B7C7270007E8E61 /* LoginViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -155,9 +158,9 @@
 		0FBDC1732B792CF600A650DD /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				0FBDC1742B792D0900A650DD /* LoginField.swift */,
-				0FBDC17A2B79327700A650DD /* LoginScreen.swift */,
+				0FBDC1742B792D0900A650DD /* UserInformation.swift */,
 				0FBDC17C2B793B0800A650DD /* PasswordField.swift */,
+				0FBDC17A2B79327700A650DD /* LoginScreen.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -269,11 +272,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F9D58002B7C7270007E8E61 /* LoginViewModel.swift in Sources */,
 				0FBDC1672B792CC700A650DD /* ContentView.swift in Sources */,
 				0FBDC1652B792CC700A650DD /* Banana_BakeryApp.swift in Sources */,
 				0F007DB42B7968B400CF2059 /* FolderRecipeDto.swift in Sources */,
 				0F007DA02B79557800CF2059 /* AuthData.swift in Sources */,
-				0FBDC1752B792D0900A650DD /* LoginField.swift in Sources */,
+				0FBDC1752B792D0900A650DD /* UserInformation.swift in Sources */,
 				0F007DAE2B79661B00CF2059 /* CreateFolderDto.swift in Sources */,
 				0FBDC1812B793C9300A650DD /* LoginRequest.swift in Sources */,
 				0F007DB82B79702C00CF2059 /* FoldersViewModel.swift in Sources */,

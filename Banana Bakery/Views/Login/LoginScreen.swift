@@ -8,12 +8,7 @@
 import SwiftUI
 
 struct LoginScreen: View {
-    @Binding var authData: AuthData
-    @State private var showPassword: Bool = false
-    @State private var showAlert: Bool = false
-    @State private var loggingIn: Bool = false
-    @State private var username: String = ""
-    @State private var password: String = ""
+    @ObservedObject var loginModel: LoginViewModel
 
     var body: some View {
         VStack {
@@ -24,21 +19,14 @@ struct LoginScreen: View {
                 .fontWeight(.bold)
                 .fontDesign(.rounded)
             
-            LoginField(username: $username, password: $password)
+            UserInformation(username: $loginModel.username, password: $loginModel.password)
             
             Button {
-                if !loggingIn {
-                    loggingIn.toggle()
-                    Login(parameters: LoginRequest(username: username, password: password)).call { response in
-                        authData.setCredentials(username: response.username, key: response.sessionKey)
-                        loggingIn.toggle()
-                    } failure: { ErrorResponse in
-                        loggingIn.toggle()
-                        showAlert.toggle()
-                    }
+                if !loginModel.loggingIn {
+                    loginModel.login()
                 }
             } label: {
-                if !loggingIn {
+                if !loginModel.loggingIn {
                     Label("Sign in", systemImage: "paperplane.fill")
                         .frame(maxWidth: .infinity)
                 } else {
@@ -53,12 +41,12 @@ struct LoginScreen: View {
             
             Spacer()
         }
-        .alert(isPresented: $showAlert) {
-            Alert(title: Text("Error!"), message: Text("Failed to login. Please try again."), dismissButton: .default(Text("Ok")))
+        .alert(isPresented: $loginModel.loginFailure) {
+            Alert(title: Text("Error!"), message: Text("Unable to login, reason: \(loginModel.errorDetails)"), dismissButton: .default(Text("Ok")))
         }
     }
 }
 
 #Preview {
-    LoginScreen(authData: Binding.constant(AuthData()))
+    LoginScreen(loginModel: LoginViewModel())
 }

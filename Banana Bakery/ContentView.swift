@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var authData: AuthData = AuthData()
+    @State private var loginModel: LoginViewModel = LoginViewModel()
     
     var body: some View {
-        if !authData.isLoggedIn() {
-            LoginScreen(authData: $authData)
+        if loginModel.loginSucess {
+            RecipesView(credentials: loginModel.credentials!)
         } else {
-            RecipesView(credentials: authData.credentials!)
+            LoginScreen(loginModel: loginModel)
         }
     }
 }

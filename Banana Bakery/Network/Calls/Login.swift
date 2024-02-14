@@ -47,8 +47,10 @@ struct Login {
                         completion(response)
                     } else {
                         let error = try? JSONDecoder().decode(ErrorResponse.self, from: data)
-                        if error != nil {
-                            failure(ErrorResponse(details: "Server request error! FTD"))
+                        if let error = error {
+                            failure(ErrorResponse(details: error.details))
+                        } else {
+                            failure(ErrorResponse(details: "Server error. Please try again."))
                         }
                     }
                 } else {

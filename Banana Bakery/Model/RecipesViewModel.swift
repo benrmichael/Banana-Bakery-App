@@ -9,11 +9,12 @@ import Foundation
 
 @Observable
 class RecipesViewModel {
+    
     var folders: [FolderDto] = []
     var showError: Bool = false
     var error: String = ""
     
-    func fetchFolders(credentials: Credentials) {
+    func fetchFolders(_ credentials: Credentials) {
         GetRecipes(params: SessionAuthentication(
             username: credentials.username,
             sessionKey: credentials.key
