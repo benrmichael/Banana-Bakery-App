@@ -12,7 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         if loginModel.loginSucess {
-            RecipesView(credentials: loginModel.credentials!)
+            MainScreen(credentials: loginModel.credentials!)
         } else {
             LoginScreen(loginModel: loginModel)
         }

@@ -1,18 +1,26 @@
 //
-//  RecipesViewModel.swift
+//  MainViewModel.swift
 //  Banana Bakery
 //
-//  Created by Benjamin Michael on 2/12/24.
+//  Created by Michael, Ben on 2/14/24.
 //
 
 import Foundation
 
 @Observable
-class RecipesViewModel {
+class MainViewModel {
     
+    init(credentials: Credentials) {
+        self.credentials = credentials
+    }
+    
+    var credentials: Credentials
     var folders: [FolderDto] = []
-    var showError: Bool = false
-    var error: String = ""
+    // add in the user information here
+    
+    func initialize() {
+        fetchFolders(credentials)
+    }
     
     func fetchFolders(_ credentials: Credentials) {
         GetRecipes(params: SessionAuthentication(
@@ -22,8 +30,7 @@ class RecipesViewModel {
         ).call { response in
             self.folders = response.folders
         } failure: { error in
-            self.showError.toggle()
-            self.error = error.details
+            // Handle the error here
         }
     }
 }

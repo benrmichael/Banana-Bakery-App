@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0F007D9D2B7951EA00CF2059 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F007D9C2B7951EA00CF2059 /* ErrorResponse.swift */; };
-		0F007DA02B79557800CF2059 /* AuthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F007D9F2B79557800CF2059 /* AuthData.swift */; };
 		0F007DA32B795BFF00CF2059 /* RecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F007DA22B795BFF00CF2059 /* RecipesView.swift */; };
 		0F007DA82B7964E300CF2059 /* SessionAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F007DA72B7964E300CF2059 /* SessionAuthentication.swift */; };
 		0F007DAC2B79659800CF2059 /* RecipeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F007DAB2B79659700CF2059 /* RecipeSection.swift */; };
@@ -17,10 +16,8 @@
 		0F007DB22B7968A700CF2059 /* SearchRecipeDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F007DB12B7968A700CF2059 /* SearchRecipeDto.swift */; };
 		0F007DB42B7968B400CF2059 /* FolderRecipeDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F007DB32B7968B400CF2059 /* FolderRecipeDto.swift */; };
 		0F007DB62B79691200CF2059 /* FolderGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F007DB52B79691200CF2059 /* FolderGroup.swift */; };
-		0F007DB82B79702C00CF2059 /* FoldersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F007DB72B79702C00CF2059 /* FoldersViewModel.swift */; };
 		0F007DBA2B7970E300CF2059 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F007DB92B7970E300CF2059 /* NetworkService.swift */; };
 		0F007DBC2B7B422400CF2059 /* GetRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F007DBB2B7B422400CF2059 /* GetRecipes.swift */; };
-		0F007DBE2B7B480200CF2059 /* RecipesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F007DBD2B7B480200CF2059 /* RecipesViewModel.swift */; };
 		0F9D58002B7C7270007E8E61 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9D57FF2B7C7270007E8E61 /* LoginViewModel.swift */; };
 		0FBDC1652B792CC700A650DD /* Banana_BakeryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBDC1642B792CC700A650DD /* Banana_BakeryApp.swift */; };
 		0FBDC1672B792CC700A650DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBDC1662B792CC700A650DD /* ContentView.swift */; };
@@ -32,11 +29,14 @@
 		0FBDC1812B793C9300A650DD /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBDC1802B793C9300A650DD /* LoginRequest.swift */; };
 		0FBDC1842B793DCF00A650DD /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBDC1832B793DCF00A650DD /* LoginResponse.swift */; };
 		0FBDC1872B793EA700A650DD /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBDC1862B793EA700A650DD /* Login.swift */; };
+		3209899F2B7D5FF4002BD103 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3209899E2B7D5FF4002BD103 /* MainScreen.swift */; };
+		320989A22B7D6052002BD103 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320989A12B7D6052002BD103 /* SearchView.swift */; };
+		320989A42B7D60B9002BD103 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320989A32B7D60B9002BD103 /* MainViewModel.swift */; };
+		320989A62B7D62EB002BD103 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320989A52B7D62EB002BD103 /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0F007D9C2B7951EA00CF2059 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
-		0F007D9F2B79557800CF2059 /* AuthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthData.swift; sourceTree = "<group>"; };
 		0F007DA22B795BFF00CF2059 /* RecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesView.swift; sourceTree = "<group>"; };
 		0F007DA72B7964E300CF2059 /* SessionAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionAuthentication.swift; sourceTree = "<group>"; };
 		0F007DAB2B79659700CF2059 /* RecipeSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSection.swift; sourceTree = "<group>"; };
@@ -45,10 +45,8 @@
 		0F007DB12B7968A700CF2059 /* SearchRecipeDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipeDto.swift; sourceTree = "<group>"; };
 		0F007DB32B7968B400CF2059 /* FolderRecipeDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderRecipeDto.swift; sourceTree = "<group>"; };
 		0F007DB52B79691200CF2059 /* FolderGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderGroup.swift; sourceTree = "<group>"; };
-		0F007DB72B79702C00CF2059 /* FoldersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldersViewModel.swift; sourceTree = "<group>"; };
 		0F007DB92B7970E300CF2059 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		0F007DBB2B7B422400CF2059 /* GetRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRecipes.swift; sourceTree = "<group>"; };
-		0F007DBD2B7B480200CF2059 /* RecipesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewModel.swift; sourceTree = "<group>"; };
 		0F9D57FF2B7C7270007E8E61 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		0FBDC1612B792CC700A650DD /* Banana Bakery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Banana Bakery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FBDC1642B792CC700A650DD /* Banana_BakeryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banana_BakeryApp.swift; sourceTree = "<group>"; };
@@ -61,6 +59,10 @@
 		0FBDC1802B793C9300A650DD /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		0FBDC1832B793DCF00A650DD /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		0FBDC1862B793EA700A650DD /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		3209899E2B7D5FF4002BD103 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		320989A12B7D6052002BD103 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		320989A32B7D60B9002BD103 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		320989A52B7D62EB002BD103 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,10 +79,8 @@
 		0F007D9E2B79556900CF2059 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0F007D9F2B79557800CF2059 /* AuthData.swift */,
-				0F007DB72B79702C00CF2059 /* FoldersViewModel.swift */,
-				0F007DBD2B7B480200CF2059 /* RecipesViewModel.swift */,
 				0F9D57FF2B7C7270007E8E61 /* LoginViewModel.swift */,
+				320989A32B7D60B9002BD103 /* MainViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -91,20 +91,6 @@
 				0F007DA22B795BFF00CF2059 /* RecipesView.swift */,
 			);
 			path = Recipes;
-			sourceTree = "<group>";
-		};
-		0F007DA62B79649200CF2059 /* Dto */ = {
-			isa = PBXGroup;
-			children = (
-				0F007DA72B7964E300CF2059 /* SessionAuthentication.swift */,
-				0F007DAB2B79659700CF2059 /* RecipeSection.swift */,
-				0F007DAD2B79661B00CF2059 /* CreateFolderDto.swift */,
-				0F007DAF2B79672400CF2059 /* SaveRecipeDto.swift */,
-				0F007DB12B7968A700CF2059 /* SearchRecipeDto.swift */,
-				0F007DB32B7968B400CF2059 /* FolderRecipeDto.swift */,
-				0F007DB52B79691200CF2059 /* FolderGroup.swift */,
-			);
-			path = Dto;
 			sourceTree = "<group>";
 		};
 		0FBDC1582B792CC700A650DD = {
@@ -126,7 +112,6 @@
 		0FBDC1632B792CC700A650DD /* Banana Bakery */ = {
 			isa = PBXGroup;
 			children = (
-				0F007DA62B79649200CF2059 /* Dto */,
 				0F007D9E2B79556900CF2059 /* Model */,
 				0FBDC17E2B793C7D00A650DD /* Network */,
 				0FBDC1722B792CEE00A650DD /* Views */,
@@ -149,8 +134,10 @@
 		0FBDC1722B792CEE00A650DD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				320989A02B7D6044002BD103 /* Search */,
 				0F007DA12B795BEA00CF2059 /* Recipes */,
 				0FBDC1732B792CF600A650DD /* Login */,
+				3209899E2B7D5FF4002BD103 /* MainScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -179,6 +166,9 @@
 		0FBDC17F2B793C8600A650DD /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				0F007DAB2B79659700CF2059 /* RecipeSection.swift */,
+				0F007DAD2B79661B00CF2059 /* CreateFolderDto.swift */,
+				0F007DAF2B79672400CF2059 /* SaveRecipeDto.swift */,
 				0FBDC1802B793C9300A650DD /* LoginRequest.swift */,
 			);
 			path = Requests;
@@ -187,6 +177,10 @@
 		0FBDC1822B793DC000A650DD /* Responses */ = {
 			isa = PBXGroup;
 			children = (
+				0F007DA72B7964E300CF2059 /* SessionAuthentication.swift */,
+				0F007DB12B7968A700CF2059 /* SearchRecipeDto.swift */,
+				0F007DB32B7968B400CF2059 /* FolderRecipeDto.swift */,
+				0F007DB52B79691200CF2059 /* FolderGroup.swift */,
 				0FBDC1832B793DCF00A650DD /* LoginResponse.swift */,
 				0F007D9C2B7951EA00CF2059 /* ErrorResponse.swift */,
 			);
@@ -198,8 +192,17 @@
 			children = (
 				0FBDC1862B793EA700A650DD /* Login.swift */,
 				0F007DBB2B7B422400CF2059 /* GetRecipes.swift */,
+				320989A52B7D62EB002BD103 /* Profile.swift */,
 			);
 			path = Calls;
+			sourceTree = "<group>";
+		};
+		320989A02B7D6044002BD103 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				320989A12B7D6052002BD103 /* SearchView.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,22 +275,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3209899F2B7D5FF4002BD103 /* MainScreen.swift in Sources */,
 				0F9D58002B7C7270007E8E61 /* LoginViewModel.swift in Sources */,
 				0FBDC1672B792CC700A650DD /* ContentView.swift in Sources */,
 				0FBDC1652B792CC700A650DD /* Banana_BakeryApp.swift in Sources */,
 				0F007DB42B7968B400CF2059 /* FolderRecipeDto.swift in Sources */,
-				0F007DA02B79557800CF2059 /* AuthData.swift in Sources */,
+				320989A42B7D60B9002BD103 /* MainViewModel.swift in Sources */,
 				0FBDC1752B792D0900A650DD /* UserInformation.swift in Sources */,
 				0F007DAE2B79661B00CF2059 /* CreateFolderDto.swift in Sources */,
 				0FBDC1812B793C9300A650DD /* LoginRequest.swift in Sources */,
-				0F007DB82B79702C00CF2059 /* FoldersViewModel.swift in Sources */,
 				0F007DB62B79691200CF2059 /* FolderGroup.swift in Sources */,
 				0F007D9D2B7951EA00CF2059 /* ErrorResponse.swift in Sources */,
 				0F007DB22B7968A700CF2059 /* SearchRecipeDto.swift in Sources */,
 				0FBDC17D2B793B0800A650DD /* PasswordField.swift in Sources */,
+				320989A62B7D62EB002BD103 /* Profile.swift in Sources */,
 				0F007DBA2B7970E300CF2059 /* NetworkService.swift in Sources */,
+				320989A22B7D6052002BD103 /* SearchView.swift in Sources */,
 				0FBDC17B2B79327700A650DD /* LoginScreen.swift in Sources */,
-				0F007DBE2B7B480200CF2059 /* RecipesViewModel.swift in Sources */,
 				0F007DAC2B79659800CF2059 /* RecipeSection.swift in Sources */,
 				0FBDC1842B793DCF00A650DD /* LoginResponse.swift in Sources */,
 				0F007DB02B79672400CF2059 /* SaveRecipeDto.swift in Sources */,
