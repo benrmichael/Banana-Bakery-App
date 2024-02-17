@@ -9,7 +9,7 @@ import Foundation
 
 @Observable
 class LoginViewModel: ObservableObject {
-    var credentials: Credentials?
+    var authentication: SessionAuthentication?
     var loggingIn: Bool = false
     var loginSucess: Bool = false
     var loginFailure: Bool = false
@@ -19,15 +19,12 @@ class LoginViewModel: ObservableObject {
     
     func login() {
         loggingIn = true
-        Login(parameters: LoginRequest(
-                username: username,
-                password: password
-            )
+        NetworkService<LoginRequest, SessionAuthentication>(
+            endpoint: .login,
+            httpRequestType: .post,
+            requestBody: LoginRequest(username: username, password: password)
         ).call { response in
-            self.credentials = Credentials(
-                username: response.username,
-                key: response.sessionKey
-            )
+            self.authentication = response
             self.loginSucess = true
             self.loggingIn = false
         } failure: { error in
@@ -35,6 +32,22 @@ class LoginViewModel: ObservableObject {
             self.loginFailure = true
             self.loggingIn = false
         }
+        
+//        
+//        loggingIn = true
+//        Login(parameters: LoginRequest(
+//                username: username,
+//                password: password
+//            )
+//        ).call { response in
+//            self.authentication = response
+//            self.loginSucess = true
+//            self.loggingIn = false
+//        } failure: { error in
+//            self.errorDetails = error.details
+//            self.loginFailure = true
+//            self.loggingIn = false
+//        }
     }
     
 }

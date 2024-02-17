@@ -8,29 +8,27 @@
 import SwiftUI
 
 struct MainScreen: View {
-    var credentials: Credentials
-    @State private var mainModel: MainViewModel?
+    var authentication: SessionAuthentication
+    @State private var mainModel: MainViewModel = MainViewModel()
     
     var body: some View {
         TabView {
-            RecipesView(credentials: credentials)
+            RecipesView(folders: mainModel.folders)
                 .tabItem {
-                    Label("Recipes", systemImage: "globe")
+                    Label("Recipes", systemImage: "folder.fill")
                 }
             
-            SearchView()
+            SearchView(auth: authentication)
                 .tabItem {
-                    Label("Seach", systemImage: "globe")
+                    Label("Seach", systemImage: "magnifyingglass")
                 }
         }
         .task {
-            mainModel = MainViewModel(credentials: credentials)
+            mainModel.initialize(authentication: authentication)
         }
     }
 }
 
-struct MainScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        MainScreen()
-    }
+#Preview {
+    MainScreen(authentication: SessionAuthentication(username: "Admin", sessionKey: "SomeKey"))
 }

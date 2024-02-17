@@ -8,31 +8,29 @@
 import SwiftUI
 
 struct RecipesView: View {
-    var credentials: Credentials
-    @State private var viewModel: RecipesViewModel = RecipesViewModel()
+    var folders: [FolderDto]
     
     var body: some View {
         NavigationSplitView {
             List {
-                ForEach(viewModel.folders) { folder in
+                ForEach(folders) { folder in
                     NavigationLink {
-                       // Go somewhere
+                        RecipeList(folderName: folder.name ,recipes: folder.recipes)
                     } label: {
-                        Text(folder.name)
+                        FolderRow(folderName: folder.name, recipes: folder.recipes)
                     }
                 }
+                .listRowInsets(EdgeInsets())
             }
-            .animation(.default, value: viewModel.folders)
+            .listStyle(.inset)
+            .animation(.default, value: folders)
             .navigationTitle("Folders")
         } detail: {
             Text("Select a Folder")
-        }
-        .task {
-            viewModel.fetchFolders(credentials)
         }
     }
 }
 
 #Preview {
-    RecipesView(credentials: Credentials(username: "Admin", key: "Idk"))
+    RecipesView(folders: [PreviewConstants.folder])
 }

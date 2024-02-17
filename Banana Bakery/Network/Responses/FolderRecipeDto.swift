@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct FolderRecipeDto: Hashable, Codable {
+struct FolderRecipeDto: Hashable, Codable, Identifiable {
     var id: CLong
     var name: String
     var instructions: [RecipeSection]

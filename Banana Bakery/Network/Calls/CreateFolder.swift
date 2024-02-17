@@ -1,21 +1,21 @@
 //
-//  Login.swift
+//  CreateFolder.swift
 //  Banana Bakery
 //
-//  Created by Benjamin Michael on 2/11/24.
+//  Created by Benjamin Michael on 2/16/24.
 //
 
 import Foundation
 
-struct Login {
+struct CreateFolder {
     
-    var parameters: LoginRequest
-        
+    var parameters: CreateFolderDto
+    
     func call(completion: @escaping (SessionAuthentication) -> Void, failure: @escaping (ErrorResponse) -> Void) {
             
         let scheme: String = "https"
-        let host: String = "banana-bakery-api.sru2o7tj9va4a.us-west-2.cs.amazonlightsail.com"
-        let path = "/users/login"
+        let host: String = "bananabakeryrest.com"
+        let path = "/recipes/folder"
             
         var components = URLComponents()
         components.scheme = scheme

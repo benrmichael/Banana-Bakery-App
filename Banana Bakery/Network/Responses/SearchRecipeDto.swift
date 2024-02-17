@@ -8,7 +8,7 @@
 import Foundation
 
 // Returned from searching for recipes
-struct SearchRecipeDto: Hashable, Codable {
+struct SearchRecipeDto: Hashable, Codable, Identifiable {
     var id: CLong
     var bakery: String
     var category: String

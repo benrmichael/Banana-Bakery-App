@@ -12,7 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         if loginModel.loginSucess {
-            MainScreen(credentials: loginModel.credentials!)
+            MainScreen(authentication: loginModel.authentication!)
         } else {
             LoginScreen(loginModel: loginModel)
         }
